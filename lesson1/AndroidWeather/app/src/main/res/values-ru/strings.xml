@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ПогодаAndroid</string>
+    <string name="menu_item_detail">Подробно</string>
+    <string name="menu_item_delete">Удалить</string>
+    <string name="menu_item_add">Добавить</string>
+    <string name="menu_item_clear">Очистить</string>
+    <string name="weather_description">Погода</string>
+    <string name="weather_temperature_unit_c">° C</string>
+
+    <string name="weather_sunny">Ясно</string>
+    <string name="weather_cloudy">Облачно</string>
+    <string name="weather_rain">Дождь</string>
+    <string name="weather_snow">Снег</string>
+    <string name="weather_storm">Гроза</string>
+
+    <string-array name="cities">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Калининград</item>
+        <item>Владивосток</item>
+        <item>Мурманск</item>
+        <item>Сочи</item>
+        <item>Нижний Новгород</item>
+        <item>Курск</item>
+    </string-array>
+
+</resources>

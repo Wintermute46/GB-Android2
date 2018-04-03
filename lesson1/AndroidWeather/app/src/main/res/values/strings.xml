@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AndroidWeather</string>
+    <string name="menu_item_detail">Detail</string>
+    <string name="menu_item_delete">Delete</string>
+    <string name="menu_item_add">Add</string>
+    <string name="menu_item_clear">Clear</string>
+    <string name="weather_description">Weather</string>
+    <string name="weather_temperature_unit_c">&#0176; C</string>
+
+    <string name="weather_sunny">Sunny</string>
+    <string name="weather_cloudy">Cloudy</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_storm">Storm</string>
+
+    <string-array name="cities">
+        <item>Moscow</item>
+        <item>St.Petersburg</item>
+        <item>Kaliningrad</item>
+        <item>Vladivostok</item>
+        <item>Murmansk</item>
+        <item>Sochi</item>
+        <item>N.Novgorod</item>
+        <item>Kursk</item>
+    </string-array>
+</resources>
