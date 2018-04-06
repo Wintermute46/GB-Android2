@@ -57,8 +57,6 @@ public class DetailFragment extends Fragment {
                 break;
                 default:
                     imageView.setImageResource(R.drawable.ic_weather_na);
-                    temp = getResources().getString(R.string.weather_sunny) + getResources().getString(R.string.weather_temperature_unit_c);
-                    cityTemperature.setText(temp);
                     break;
         }
 

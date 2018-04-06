@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_item_camera"
+            android:icon="@drawable/ic_camera_black_24dp"
+            android:title="@string/menu_item_camera" />
+
+        <item
+            android:id="@+id/menu_item_gallery"
+            android:icon="@drawable/ic_image_black_24dp"
+            android:title="@string/menu_item_gallery" />
+
+        <item
+            android:id="@+id/menu_item_tools"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="@string/menu_item_tools" />
+    </group>
+
+    <item android:title="@string/menu_label"
+        android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/menu_item_about"
+                android:checkable="true"
+                android:icon="@drawable/ic_local_library_black_24dp"
+                android:title="@string/menu_item_about" />
+
+            <item
+                android:id="@+id/menu_item_send"
+                android:checkable="true"
+                android:icon="@drawable/ic_create_black_24dp"
+                android:title="@string/menu_item_send" />
+        </menu>
+    </item>
+
+</menu>
