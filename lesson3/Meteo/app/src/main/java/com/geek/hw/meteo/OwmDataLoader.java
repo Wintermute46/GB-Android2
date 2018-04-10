@@ -11,6 +11,10 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 
+///////////////////////////////////////////////////////////////////////////
+// Get the weather information
+//provider https://openweathermap.org/
+///////////////////////////////////////////////////////////////////////////
 
 public class OwmDataLoader {
 

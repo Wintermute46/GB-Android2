@@ -30,6 +30,9 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+///////////////////////////////////////////////////////////////////////////
+// Fragment with OpenStreetMap weather data
+///////////////////////////////////////////////////////////////////////////
 
 public class OWMdataFragment extends Fragment {
 
@@ -63,6 +66,10 @@ public class OWMdataFragment extends Fragment {
         return view;
     }
 
+///////////////////////////////////////////////////////////////////////////
+// Get the weather
+///////////////////////////////////////////////////////////////////////////
+
     private void updateWeatherData(final String city) {
         new Thread() {
             public void run() {
@@ -86,6 +93,10 @@ public class OWMdataFragment extends Fragment {
             }
         }.start();
     }
+
+///////////////////////////////////////////////////////////////////////////
+// Display the weather data
+///////////////////////////////////////////////////////////////////////////
 
     private void renderWeather(CityData data) {
         try {
@@ -122,6 +133,10 @@ public class OWMdataFragment extends Fragment {
             Toast.makeText(getActivity(), getString(R.string.json_error), Toast.LENGTH_LONG).show();
         }
     }
+
+///////////////////////////////////////////////////////////////////////////
+// Download the weather icon
+///////////////////////////////////////////////////////////////////////////
 
     private void setWeatherIcon(String icon){
 

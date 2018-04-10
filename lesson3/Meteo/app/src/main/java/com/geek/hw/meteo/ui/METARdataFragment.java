@@ -18,6 +18,10 @@ import com.geek.hw.meteo.R;
 import com.geek.hw.meteo.models.CityData;
 import com.geek.hw.meteo.models.MetarData;
 
+///////////////////////////////////////////////////////////////////////////
+// Fragment with METAR meteo data closest to a parameter latitude/longitude
+//from OpenWeatherMap data
+///////////////////////////////////////////////////////////////////////////
 
 public class METARdataFragment extends Fragment {
 
@@ -74,6 +78,9 @@ public class METARdataFragment extends Fragment {
         return view;
     }
 
+///////////////////////////////////////////////////////////////////////////
+// Get the weather
+///////////////////////////////////////////////////////////////////////////
 
     private void updateMetarData(final float lon, final float lat){
         new Thread(){
@@ -98,6 +105,9 @@ public class METARdataFragment extends Fragment {
         }.start();
     }
 
+///////////////////////////////////////////////////////////////////////////
+// Display the weather data
+///////////////////////////////////////////////////////////////////////////
 
     private void renderMetar(MetarData metar) {
         try {

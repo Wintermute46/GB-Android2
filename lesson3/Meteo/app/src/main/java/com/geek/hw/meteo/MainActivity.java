@@ -24,6 +24,10 @@ import com.geek.hw.meteo.ui.METARdataFragment;
 import com.geek.hw.meteo.ui.OWMdataFragment;
 import com.geek.hw.meteo.ui.SelectCityDialog;
 
+///////////////////////////////////////////////////////////////////////////
+// MainActivity with drawer
+///////////////////////////////////////////////////////////////////////////
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AddCityDialogListener {
 
@@ -65,6 +69,10 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+///////////////////////////////////////////////////////////////////////////
+// Save data
+///////////////////////////////////////////////////////////////////////////
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -72,6 +80,10 @@ public class MainActivity extends AppCompatActivity
         editor.putString(CITY_NAME, selectedCity);
         editor.apply();
     }
+
+///////////////////////////////////////////////////////////////////////////
+// Menu and navigation
+///////////////////////////////////////////////////////////////////////////
 
     @Override
     public void onBackPressed() {
@@ -122,6 +134,10 @@ public class MainActivity extends AppCompatActivity
         selectedCity = city;
         setScreen(R.id.nav_open_weather, selectedCity);
     }
+
+///////////////////////////////////////////////////////////////////////////
+// Fragments call
+///////////////////////////////////////////////////////////////////////////
 
     private void setScreen(int itemId, String city) {
         Fragment fragment;

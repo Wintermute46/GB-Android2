@@ -13,6 +13,13 @@ import com.squareup.okhttp.Response;
 
 import java.util.Locale;
 
+///////////////////////////////////////////////////////////////////////////
+// Get the latest METAR information in a decoded format
+// for a single station closest to a parameter latitude/longitude.
+//provider https://checkwx.com/
+//METAR https://ru.wikipedia.org/wiki/METAR
+///////////////////////////////////////////////////////////////////////////
+
 public class MetarDataLoader {
 
     private final static String METAR_URL = "https://api.checkwx.com/metar/lat/%f/lon/%f/decoded";
